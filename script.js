@@ -30,10 +30,12 @@ function setCurrentTime(){
 setInterval(setCurrentTime,1000)
 
 // Loops through input area to get item from local storage
-var activityIndex = [1,2,3,4,5,6,7,8,9];
+var activityIndex = [9,10,11,12,13,14,15,16,17];
 for (var i = 0; i < activityIndex.length; i++) {
     var thingsToDo = localStorage.getItem(activityIndex[i]);
-    //console.log(".block" + activity[i])
+    // console.log($(".block" + activityIndex[i]))
+    console.log(thingsToDo);
+    console.log(".block"+activityIndex[i])
     $(".block" + activityIndex[i]).val(thingsToDo);
 }
 
