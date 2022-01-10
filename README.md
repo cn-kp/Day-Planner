@@ -15,7 +15,7 @@ To install this program all you need is a text editior. I would recommend Visual
 ## Usage
 
 The program is very simple to use and when loaded, the user will be presented with a listed calender, with hours listed on the left denoting each hour block as seen below
-![home page day planner](./assets/webpage.PNG)
+![home page day planner](./assets/webpage.png)
 
 The user is required to input their hourly activities in the respective block and hit the save icon to commit the changes. This will save the users input into that block and can be access, when the page is reloaded. The color of the hour block also change depending on the current time to denote past, present or future for easy reference. 
 
