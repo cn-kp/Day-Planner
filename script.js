@@ -1,15 +1,13 @@
-
+// getting all our time block values
 var hourBlock =document.querySelectorAll(".hourBlock");
-console.log(moment().hour)
 
 //using a function to set the current time dynamically
 function setCurrentTime(){
     $("#currentDay").text(moment().format('dddd, MMMM Do, h:mm:ss a'));
     
-    // hourBlock.forEach(function())};
+    // changing colour of time block based on current time and applying it to all time blocks using for loop
     var nowInHours = moment().hour();
     for (var i=0;i < hourBlock.length;i++){
-        // console.log(hourBlock[i].dataset.hour)
         if (nowInHours > hourBlock[i].dataset.hour){
             hourBlock[i].classList.add("past")
         }
@@ -20,9 +18,6 @@ function setCurrentTime(){
             hourBlock[i].classList.add("future")
         } 
     }
-    //});
-//     if (nowInHours > ("data-hour")){
-//         element.addClass("past")}
 //     // loop through, using if and else statements to check if past or future and add class.
 };
 
@@ -33,9 +28,6 @@ setInterval(setCurrentTime,1000)
 var activityIndex = [9,10,11,12,13,14,15,16,17];
 for (var i = 0; i < activityIndex.length; i++) {
     var thingsToDo = localStorage.getItem(activityIndex[i]);
-    // console.log($(".block" + activityIndex[i]))
-    console.log(thingsToDo);
-    console.log(".block"+activityIndex[i])
     $(".block" + activityIndex[i]).val(thingsToDo);
 }
 
@@ -45,8 +37,6 @@ $(".saveBtn").click(function () {
     var activity = $(this).siblings(".hourBlock").val();
     var hourIndex = $(this).parent().data("hour");
     localStorage.setItem(hourIndex, activity);
-    console.log(hourIndex);
-    console.log(activity);
 });
 
 // starts the day and adds 9 hours to give 9am
