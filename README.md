@@ -6,7 +6,7 @@ This program is created to aid the user in listing down daily activities to effe
 
 This project is deployed to GitHub and can be accessed using the following links:
     -[GitHub Repository](https://github.com/cn-kp/homework5-day-scheduler),
-    -[GitHub Deployed Link](https://cn-kp.github.io/homework5-day-scheduler/)
+    -[GitHub Deployed Link](https://cn-kp.github.io/Day-Planner/)
 
 ## Installation
 
