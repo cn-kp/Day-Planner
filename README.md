@@ -5,7 +5,7 @@
 This program is created to aid the user in listing down daily activities to effectively manage their days. This simple daily calender allows a user to save events for each hour of the day from 9am to 5pm to local storage and can be accessed whenever needed. This program heavily relies on javascript, J Query, Moment.js and bootstrap to dynamically update the page with elements such as the current time, changing the colors to denote past, present or future and uses bootstrap for the calender itself.
 
 This project is deployed to GitHub and can be accessed using the following links:
-    -[GitHub Repository](https://github.com/cn-kp/homework5-day-scheduler),
+    -[GitHub Repository](https://github.com/cn-kp/Day-Planner),
     -[GitHub Deployed Link](https://cn-kp.github.io/Day-Planner/)
 
 ## Installation
